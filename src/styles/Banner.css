@@ -1,0 +1,17 @@
+.banner{
+    position: relative;
+}
+.imgBanner{
+    border-radius: 25px;
+    filter:brightness(75%);
+}
+
+.msgBanner{
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}

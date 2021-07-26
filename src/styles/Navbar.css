@@ -1,0 +1,13 @@
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    color: #ff6060;
+    margin-left: 50px;
+}
+
+li:hover{
+    text-decoration: underline;
+}
