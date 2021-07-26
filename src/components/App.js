@@ -1,10 +1,15 @@
-import '../styles/App.css';
+import "../styles/App.css";
+import React, { Component } from "react";
+import Header from "./Header";
+import Banner from "./Banner";
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+class App extends Component {
+  render() {
+    return <div className="App">
+      <Header/>
+      <Banner/>
+    </div>;
+  }
 }
 
 export default App;
