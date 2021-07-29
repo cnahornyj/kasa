@@ -1,9 +1,11 @@
 .banner{
     position: relative;
+    margin: 0 9% 0 9%;
 }
 .imgBanner{
     border-radius: 25px;
     filter:brightness(75%);
+    max-width: 100%;
 }
 
 .msgBanner{
