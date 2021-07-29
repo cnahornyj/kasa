@@ -1,0 +1,15 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: black;
+  width: 100%;
+  padding: 2%;
+}
+.imgFooter {
+  width: 100px;
+  height: 40px;
+}
+
+.copyrights {
+  color: white;
+}
