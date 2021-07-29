@@ -1,5 +1,5 @@
 .footer {
-  position: fixed;
+  position: inherit;
   bottom: 0;
   background: black;
   width: 100%;
