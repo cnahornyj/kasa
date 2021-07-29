@@ -1,0 +1,47 @@
+.title {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 2%;
+  justify-content: space-between;
+  background: #ff6060;
+  padding: 1%;
+  height: 20px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.description {
+  width: 58%;
+  margin: auto;
+  margin-bottom: 2%;
+  padding: 2%;
+  text-align: justify;
+  background: #f6f6f6;
+  color: #ff6060;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+svg:hover {
+  animation-duration: 2s;
+  animation-name: agrandissement;
+  animation-iteration-count:inherit ;
+}
+
+@keyframes agrandissement {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}

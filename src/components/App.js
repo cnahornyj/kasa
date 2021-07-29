@@ -1,9 +1,10 @@
 import "../styles/App.css";
 import React, { Component } from "react";
 import Header from "./Header";
-import Banner from "./Banner";
-//import ListHouses from "./ListHouses";
-import CardsList from "./CardsList";
+//import Banner from "./Banner";
+/*import ListHouses from "./ListHouses";
+import CardsList from "./CardsList";*/
+import Propos from "./Propos";
 import Footer from "./Footer";
 
 class App extends Component {
@@ -11,8 +12,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Banner />
-        <CardsList />
+        <Propos />
+        {/*<Banner />*/}
+        {/*<CardsList />*/}
         {/*<ListHouses />*/}
         <Footer />
       </div>

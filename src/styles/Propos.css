@@ -1,0 +1,5 @@
+.imgBanner{
+    border-radius: 25px;
+    filter:brightness(75%);
+    max-width: 100%;
+}
