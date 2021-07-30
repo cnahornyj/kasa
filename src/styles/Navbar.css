@@ -1,23 +1,14 @@
-ul{
-    display: flex;
-    list-style: none;
+a {
+  color: #ff6060;
+  margin-left: 50px;
+  text-decoration: none;
 }
 
-li{
-    color: #ff6060;
-    margin-left: 50px;
+a:visited {
+  text-decoration: none;
+  color: #ff6060;
 }
 
-a{
-    text-decoration: none;
+.pageActive {
+  text-decoration: underline;
 }
-
-a:visited{
-    text-decoration: none;
-    color: #ff6060;
-}
-
-.pageActive{
-    text-decoration: underline;
-}
-

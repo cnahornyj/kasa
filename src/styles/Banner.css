@@ -1,20 +1,20 @@
-.banner{
-    position: relative;
-    margin: 0 9% 3% 9%;
+.banner {
+  position: relative;
+  margin: 0 9% 3% 9%;
 }
-.imgBanner{
-    border-radius: 25px;
-    filter:brightness(75%);
-    max-width: 100%;
+.imgBanner {
+  border-radius: 25px;
+  filter: brightness(75%);
+  max-width: 100%;
 }
 
-.msgBanner{
-    color: white;
-    font-weight: 400;
-    letter-spacing: 1.1px;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    transform: translate(-40%, -30%);
-    width: 100%;
+.msgBanner {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: translate(-40%, -30%);
+  font-size: 3rem;
 }

@@ -1,4 +1,7 @@
-.imgBanner{
+.propos{
+    margin: 0 9% 3% 9%;
+}
+.imgPropos{
     border-radius: 25px;
     filter:brightness(75%);
     max-width: 100%;

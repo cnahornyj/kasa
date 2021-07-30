@@ -1,16 +1,16 @@
 .title {
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 80%;
   margin: auto;
   margin-top: 2%;
   justify-content: space-between;
   background: #ff6060;
   padding: 1%;
-  height: 20px;
+  height: 13px;
   color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .subtitle {
@@ -19,7 +19,7 @@
 }
 
 .description {
-  width: 58%;
+  width: 78%;
   margin: auto;
   margin-bottom: 2%;
   padding: 2%;
@@ -33,7 +33,7 @@
 svg:hover {
   animation-duration: 2s;
   animation-name: agrandissement;
-  animation-iteration-count:inherit ;
+  animation-iteration-count: inherit;
 }
 
 @keyframes agrandissement {
