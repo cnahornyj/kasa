@@ -35,17 +35,5 @@ svg{
 }
 
 svg:hover {
-  animation-duration: 2s;
-  animation-name: agrandissement;
-  animation-iteration-count: inherit;
-}
-
-@keyframes agrandissement {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.5);
-  }
+  color: grey;
 }
