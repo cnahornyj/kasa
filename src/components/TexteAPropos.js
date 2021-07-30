@@ -8,6 +8,7 @@ class TexteAPropos extends Component {
     super();
     this.state = {
       isVisible: false,
+      isUp: false
     };
   }
 
@@ -16,7 +17,7 @@ class TexteAPropos extends Component {
       <article>
         <div className="title">
           <h2 className="subtitle">{this.props.title}</h2>
-          <FontAwesomeIcon icon={faChevronDown} className="arrow" onClick={() => this.onClick()} />
+          <FontAwesomeIcon icon={this.isUp ? faChevronUp : faChevronDown} className="arrow" onClick={() => this.onClick()} />
         </div>
         {this.state.isVisible ? (
           <p className="description">{this.props.description}</p>

@@ -1,4 +1,4 @@
-.cardsList {
+.housesList {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;

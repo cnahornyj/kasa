@@ -5,10 +5,10 @@ import "../styles/Banner.css";
 class Banner extends Component {
     render() {
         return (
-            <div className="banner">
+            <section className="banner">
                 <img src={imgBanner} alt="" className="imgBanner"/>
                 <h1 className="msgBanner">Chez vous, partout et ailleurs</h1>
-            </div>
+            </section>
         );
     }
 }

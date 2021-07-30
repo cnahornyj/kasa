@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "../styles/CardsList.css";
-import HousesList from "../data/data";
+import Data from "../data/data";
 
-class CardsList extends Component {
+class HousesList extends Component {
   render() {
-    const houses = HousesList;
+    const houses = Data;
     return (
-      <section className="cardsList">
+      <section className="housesList">
         {houses.map((house, index) => (
           <article key={`${house}-${index}`} className="card">
             <img src={house.cover} alt="Logement" className="imgHouse" />
@@ -18,4 +18,4 @@ class CardsList extends Component {
   }
 }
 
-export default CardsList;
+export default HousesList;

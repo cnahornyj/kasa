@@ -1,4 +1,4 @@
-const HousesList = [
+const Data = [
     {
       "id": "c67ab8a7",
       "title": "Appartement cosy",
@@ -618,4 +618,4 @@ const HousesList = [
     }
   ]
 
-  export default HousesList
+  export default Data

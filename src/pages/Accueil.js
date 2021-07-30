@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
-import CardsList from "../components/CardsList";
+import HousesList from "../components/CardsList";
 
 class Accueil extends Component {
   render() {
@@ -10,7 +10,7 @@ class Accueil extends Component {
       <div>
         <Header />
         <Banner />
-        <CardsList />
+        <HousesList />
         <Footer />
       </div>
     );
