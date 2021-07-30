@@ -1,23 +1,32 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import '../styles/TexteAPropos.css'
+import "../styles/TexteAPropos.css";
 
 class TexteAPropos extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isVisible: false,
+    };
+  }
+
   render() {
     return (
       <article>
         <div className="title">
-          <h2 className="subtitle">Fiabilité</h2>
-          <FontAwesomeIcon icon={faChevronDown} className="arrow" />
+          <h2 className="subtitle">{this.props.title}</h2>
+          <FontAwesomeIcon icon={faChevronDown} className="arrow" onClick={() => this.onClick()} />
         </div>
-        <p className="description">
-          La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-          comportement discriminatoire ou de perturbation du voisinage
-          entraînera une exclusion de notre plateforme.
-        </p>
+        {this.state.isVisible ? (
+          <p className="description">{this.props.description}</p>
+        ) : null}
       </article>
     );
+  }
+
+  onClick() {
+    this.setState(prevState => ({ isVisible: !prevState.isVisible }));
   }
 }
 
