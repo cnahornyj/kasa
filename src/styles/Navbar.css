@@ -12,16 +12,12 @@ a{
     text-decoration: none;
 }
 
-a:active{
-    font-weight: bold;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
 a:visited{
     text-decoration: none;
     color: #ff6060;
+}
+
+.pageActive{
+    text-decoration: underline;
 }
 
