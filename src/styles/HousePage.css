@@ -1,0 +1,72 @@
+/*.descEqp{
+    display: flex;
+    margin: 5%;
+}
+
+.txt{
+    width: 50%;
+}
+
+article{
+    width: 50%;
+}*/
+
+.locAndHost {
+  display: flex;
+  width: 82%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.housePage {
+  color: #ff6060;
+}
+
+.localisation {
+  color: #ff6060;
+}
+
+.titleHouse {
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.city {
+  margin-top: 5px;
+}
+
+.tags {
+  display: flex;
+}
+
+.host {
+  display: flex;
+}
+
+.nameHost {
+  text-align: right;
+  line-height: 22px;
+  width: 110px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.imgHost {
+  width: 64px;
+  height: 64px;
+  border-radius: 30px;
+  margin-top: -3px;
+}
+
+span {
+  color: white;
+  background: #ff6060;
+  padding: 1%;
+  border-radius: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 125px;
+  text-align: center;
+  font-size: 14px;
+}
