@@ -1,0 +1,24 @@
+.titleDescHouse {
+  display: flex;
+  background: #ff6060;
+  color: white;
+  padding: 1%;
+  width: 25%;
+  height: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.titlebis {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.dscp {
+  width: 25%;
+  padding: 1%;
+  background: #e5e5e5;
+  margin-top: 0;
+}

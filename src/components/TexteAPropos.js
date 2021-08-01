@@ -14,7 +14,7 @@ class TexteAPropos extends Component {
 
   render() {
     return (
-      <article>
+      <article style={{width:"50%"}}>
         <div className="title">
           <h2 className="subtitle">{this.props.title}</h2>
           <FontAwesomeIcon icon={this.isUp ? faChevronUp : faChevronDown} className="arrow" onClick={() => this.onClick()} />
