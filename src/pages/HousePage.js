@@ -50,7 +50,7 @@ class HousePage extends Component {
             <FontAwesomeIcon icon={faStar} className="arrow" />
             </div>
           </div>
-          <article className="equipments">
+          <article style={{display:"flex",width:"82%",margin:"auto",justifyContent:"space-between"}}>
           <TexteAPropos title="Description" description={house.description} />
           <TexteAPropos title="Equipements" description={house.equipments} />
           </article>
