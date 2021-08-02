@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Gallery extends Component {
+class Carousel extends Component {
     render() {
         return (
-            <section className="gallery">
+            <section className="carousel">
 
             </section>
         );
     }
 }
 
-export default Gallery;
+export default Carousel;

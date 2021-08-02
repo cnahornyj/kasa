@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import "../styles/TexteAPropos.css";
+import "../styles/TextBloc.css";
 
-class TexteAPropos extends Component {
+class TextBloc extends Component {
   constructor() {
     super();
     this.state = {
@@ -40,4 +40,4 @@ class TexteAPropos extends Component {
   }
 }
 
-export default TexteAPropos;
+export default TextBloc;

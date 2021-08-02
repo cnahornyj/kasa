@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "../styles/HousePage.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import TexteAPropos from "../components/TexteAPropos"
+import Rating from "../components/Rating";
+import TextBloc from "../components/TextBloc"
 import data from "../data/data";
 
 function findIndexByKeyValue(house, key, valuetosearch) {
@@ -47,12 +46,12 @@ class HousePage extends Component {
                 className="imgHost"
               />
             </article>
-            <FontAwesomeIcon icon={faStar} className="arrow" />
+            <Rating />
             </div>
           </div>
           <article className="equipments">
-          <TexteAPropos title="Description" description={house.description} />
-          <TexteAPropos title="Equipements" description={house.equipments} />
+          <TextBloc title="Description" description={house.description} />
+          <TextBloc title="Equipements" description={house.equipments} />
           </article>
         </section>
         <Footer />
