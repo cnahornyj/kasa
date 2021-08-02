@@ -3,7 +3,9 @@ import "../styles/HousePage.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Rating from "../components/Rating";
-import TextBloc from "../components/TextBloc"
+import HostProfile from "../components/HostProfile";
+import HouseDetails from "../components/HouseDetails";
+import TextBloc from "../components/TextBloc";
 import data from "../data/data";
 
 function findIndexByKeyValue(house, key, valuetosearch) {
@@ -17,7 +19,6 @@ function findIndexByKeyValue(house, key, valuetosearch) {
 
 class HousePage extends Component {
   render() {
-
     const houses = data;
     const idHouse = window.location.href.substring(28);
     const index = findIndexByKeyValue(houses, "id", idHouse);
@@ -26,34 +27,16 @@ class HousePage extends Component {
     return (
       <div>
         <Header />
-        <section className="housePage">
-          <div className="locAndHost">
-            <article className="localisation">
-              <h2 className="titleHouse">{house.title}</h2>
-              <p className="city">{house.location}</p>
-              <article className="tags">
-                {house.tags.map((tag, index) => (
-                  <span key={`${tag}-${index}`}>{tag}</span>
-                ))}
-              </article>
-            </article>
-            <div style={{display: "flex", flexDirection: "column"}}>
-            <article className="host">
-              <p className="nameHost">{house.host.name}</p>
-              <img
-                src={house.host.picture}
-                alt="Profil de l'hôte du logement"
-                className="imgHost"
-              />
-            </article>
-            <Rating />
-            </div>
-          </div>
-          <article className="equipments">
-          <TextBloc title="Description" description={house.description} />
-          <TextBloc title="Equipements" description={house.equipments} />
-          </article>
-        </section>
+        <HouseDetails title={house.title} location={house.location} tags={house.tags}/>
+        <HostProfile name={house.host.name} picture={house.host.picture} />
+        <Rating />
+        <TextBloc title="Description" description={house.description} />
+        <TextBloc
+          title="Equipements"
+          description={house.equipments.map((equipment, index) => (
+            <p key={`${equipment}-${index}`}>{equipment}</p>
+          ))}
+        />
         <Footer />
       </div>
     );

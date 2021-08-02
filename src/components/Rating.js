@@ -6,13 +6,13 @@ import '../styles/Rating.css'
 class Rating extends Component {
   render() {
     return (
-      <div className="ratings">
+      <article className="ratings">
         <FontAwesomeIcon icon={faStar}/>
         <FontAwesomeIcon icon={faStar}/>
         <FontAwesomeIcon icon={faStar}/>
         <FontAwesomeIcon icon={faStar}/>
         <FontAwesomeIcon icon={faStar}/>
-      </div>
+      </article>
     );
   }
 }
