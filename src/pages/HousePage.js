@@ -27,9 +27,20 @@ class HousePage extends Component {
     return (
       <div>
         <Header />
-        <HouseDetails title={house.title} location={house.location} tags={house.tags}/>
-        <HostProfile name={house.host.name} picture={house.host.picture} />
-        <Rating />
+        <section style={{ display: "flex", justifyContent: "space-between", width:"82%", margin:"auto", color:"#ff6060" }}>
+          <HouseDetails
+            title={house.title}
+            location={house.location}
+            tags={house.tags}
+          />
+          <section style={{ display: "flex", flexDirection: "column" }}>
+          <section style={{ display: "flex" }}>
+            <HostProfile name={house.host.name} picture={house.host.picture} />
+          </section>
+          <Rating />
+          </section>
+        </section>
+        <section className="textBloc" style={{ display: "flex", width: "91%", margin:"auto" }}>
         <TextBloc title="Description" description={house.description} />
         <TextBloc
           title="Equipements"
@@ -37,6 +48,7 @@ class HousePage extends Component {
             <p key={`${equipment}-${index}`}>{equipment}</p>
           ))}
         />
+        </section>
         <Footer />
       </div>
     );

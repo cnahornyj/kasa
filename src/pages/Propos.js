@@ -4,14 +4,15 @@ import "../styles/Propos.css";
 import TextBloc from "../components/TextBloc";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
 class Propos extends Component {
   render() {
     return (
       <div>
         <Header />
-        <section className="propos">
-          <img src={imgPropos} alt="" className="imgPropos" />
+        <section>
+          <Banner image={imgPropos} />
           <TextBloc
             title="Fiabilité"
             description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

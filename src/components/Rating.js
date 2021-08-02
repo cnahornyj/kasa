@@ -6,7 +6,7 @@ import '../styles/Rating.css'
 class Rating extends Component {
   render() {
     return (
-      <article className="ratings">
+      <article className="ratings" style={{textAlign:"end"}}>
         <FontAwesomeIcon icon={faStar}/>
         <FontAwesomeIcon icon={faStar}/>
         <FontAwesomeIcon icon={faStar}/>

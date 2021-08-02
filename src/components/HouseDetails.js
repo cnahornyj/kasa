@@ -4,9 +4,9 @@ class HouseLocalisation extends Component {
   render() {
     return (
       <article className="housedetails">
-        <h2>{this.props.title}</h2>
-        <p>{this.props.location}</p>
-        <article>
+        <h2 style={{marginBottom:"0"}}>{this.props.title}</h2>
+        <p style={{marginTop:"10px"}}>{this.props.location}</p>
+        <article style={{width:"500px"}}>
           {this.props.tags.map((tag, index) => (
             <span key={`${tag}-${index}`}>{tag}</span>
           ))}
