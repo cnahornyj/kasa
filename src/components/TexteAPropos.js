@@ -7,22 +7,31 @@ class TexteAPropos extends Component {
   constructor() {
     super();
     this.state = {
-      isVisible: false,
-      isUp: false
+      isVisible: false
     };
   }
 
   render() {
+
+    let button;
+    if (this.state.isVisible){  
+      button = <FontAwesomeIcon icon={faChevronUp} className="arrow" onClick={() => this.onClick()} />
+      } else {
+      button = <FontAwesomeIcon icon={faChevronDown} className="arrow" onClick={() => this.onClick()} />
+      }
+
     return (
-      <article style={{width:"50%"}}>
+      <div style={{width:"40%", margin:"auto"}}>
+      <article>
         <div className="title">
           <h2 className="subtitle">{this.props.title}</h2>
-          <FontAwesomeIcon icon={this.isUp ? faChevronUp : faChevronDown} className="arrow" onClick={() => this.onClick()} />
+          {button}
         </div>
         {this.state.isVisible ? (
           <p className="description">{this.props.description}</p>
         ) : null}
       </article>
+      </div>
     );
   }
 
