@@ -11,7 +11,7 @@ class Propos extends Component {
     return (
       <div>
         <Header />
-        <section>
+        <section className="about">
           <Banner image={imgPropos} />
           <TextBloc
             title="Fiabilité"
