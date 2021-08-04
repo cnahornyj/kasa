@@ -21,8 +21,7 @@ class TextBloc extends Component {
       }
 
     return (
-      <div style={{width:"40%", margin:"auto"}}>
-      <article>
+      <article className="textBloc">
         <div className="title">
           <h2 className="subtitle">{this.props.title}</h2>
           {button}
@@ -31,7 +30,6 @@ class TextBloc extends Component {
           <p className="description">{this.props.description}</p>
         ) : null}
       </article>
-      </div>
     );
   }
 
