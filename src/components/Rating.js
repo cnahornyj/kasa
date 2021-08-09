@@ -4,7 +4,9 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import '../styles/Rating.css'
 
 class Rating extends Component {
+
   render() {
+
     return (
       <article className="ratings" style={{textAlign:"end"}}>
         <FontAwesomeIcon icon={faStar}/>

@@ -17,12 +17,23 @@ function findIndexByKeyValue(house, key, valuetosearch) {
   return null;
 }
 
+
 class HousePage extends Component {
   render() {
     const houses = data;
     const idHouse = window.location.href.substring(28);
     const index = findIndexByKeyValue(houses, "id", idHouse);
     const house = houses[index];
+
+    // Conversion de la note du logement sur /5 en nombre
+    const nbOfStars = parseInt(house.rating) + 1;
+    let arrayOfRatings = [];
+
+    for (let logement = 1; logement < nbOfStars; logement++) {
+      arrayOfRatings.push(logement);
+    }
+
+    console.log(arrayOfRatings);
 
     return (
       <section className="housepage">
@@ -34,20 +45,24 @@ class HousePage extends Component {
             tags={house.tags}
           />
           <article>
-          <article>
-            <HostProfile name={house.host.name} picture={house.host.picture} />
-          </article>
-          <Rating />
+            <article>
+              <HostProfile
+                name={house.host.name}
+                picture={house.host.picture}
+              />
+            </article>
+            <Rating />
+            <p>{house.rating}</p>
           </article>
         </article>
         <article>
-        <TextBloc title="Description" description={house.description} />
-        <TextBloc
-          title="Equipements"
-          description={house.equipments.map((equipment, index) => (
-            <p key={`${equipment}-${index}`}>{equipment}</p>
-          ))}
-        />
+          <TextBloc title="Description" description={house.description} />
+          <TextBloc
+            title="Equipements"
+            description={house.equipments.map((equipment, index) => (
+              <p key={`${equipment}-${index}`}>{equipment}</p>
+            ))}
+          />
         </article>
         <Footer />
       </section>
