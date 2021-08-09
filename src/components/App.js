@@ -7,6 +7,7 @@ import HousePage from "../pages/HousePage";
 import Error from "../pages/Error"
 
 class App extends Component {
+
   render() {
     return (
        <BrowserRouter>
