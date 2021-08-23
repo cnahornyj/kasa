@@ -10,6 +10,7 @@ class Accueil extends Component {
     return (
       <div>
         <Header />
+        {/* Remplissage des props du composant Banner */}
         <Banner image={imgHome} legend="Chez vous, partout et ailleurs" />
         <HousesList />
         <Footer />

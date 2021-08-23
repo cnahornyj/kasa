@@ -10,6 +10,7 @@ class App extends Component {
 
   render() {
     return (
+      // Mise en place du routing
        <BrowserRouter>
        <Switch>
          <Route path="/" exact component={Accueil}/>

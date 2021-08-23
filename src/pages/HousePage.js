@@ -17,12 +17,16 @@ function findIndexByKeyValue(house, key, valuetosearch) {
   return null;
 }
 
-
 class HousePage extends Component {
   render() {
+    
+    // Récupération de la data via la variable houses
     const houses = data;
+    // Récupération de l'id du logement dans l'URL
     const idHouse = window.location.href.substring(28);
+    // Récupération de l'index du logement dans le tableau de logements
     const index = findIndexByKeyValue(houses, "id", idHouse);
+    // Récupération de la data propre au logement grâce à son index via la variable house
     const house = houses[index];
 
     // Conversion de la note du logement sur /5 en nombre
@@ -39,6 +43,7 @@ class HousePage extends Component {
       <section className="housepage">
         <Header />
         <article>
+          {/* Remplissage des props du composant HouseDetails */}
           <HouseDetails
             title={house.title}
             location={house.location}
@@ -46,6 +51,7 @@ class HousePage extends Component {
           />
           <article>
             <article>
+              {/* Remplissage des props du composant HostProfile */}
               <HostProfile
                 name={house.host.name}
                 picture={house.host.picture}
@@ -56,7 +62,9 @@ class HousePage extends Component {
           </article>
         </article>
         <article>
+          {/* Remplissage des props du composant TextBloc */}
           <TextBloc title="Description" description={house.description} />
+          {/* Remplissage des props du composant TextBloc */}
           <TextBloc
             title="Equipements"
             description={house.equipments.map((equipment, index) => (
