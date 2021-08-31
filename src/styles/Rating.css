@@ -1,7 +1,10 @@
 .ratings{
     color: #ccc;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 .rating{
-    color: red;
+    color: #ff6060;
 }

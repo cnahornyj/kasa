@@ -13,9 +13,9 @@ article{
 
 .locAndHost {
   display: flex;
-  width: 82%;
-  margin: auto;
   justify-content: space-between;
+  margin: 2% 9%;
+  color: #ff6060;
 }
 
 .housePage {
