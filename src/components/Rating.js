@@ -1,19 +1,17 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import '../styles/Rating.css'
+import "../styles/Rating.css";
 
 class Rating extends Component {
-
   render() {
+    const ratingScale = [1, 2, 3, 4, 5];
 
     return (
-      <article className="ratings" style={{textAlign:"end"}}>
-        <FontAwesomeIcon icon={faStar}/>
-        <FontAwesomeIcon icon={faStar}/>
-        <FontAwesomeIcon icon={faStar}/>
-        <FontAwesomeIcon icon={faStar}/>
-        <FontAwesomeIcon icon={faStar}/>
+      <article className="ratings" style={{ textAlign: "end" }}>
+        {ratingScale.map((scale) => (
+          <i
+            className={`fas fa-star${scale <= this.props.rating ? " rating" : ""}`} key={`star-${scale}`}
+          ></i>
+        ))}
       </article>
     );
   }
