@@ -1,0 +1,9 @@
+.tagsOfHouse {
+  width: 500px;
+}
+
+@media screen and (max-width: 530px) {
+  .tagsOfHouse {
+    width: 300px;
+  }
+}

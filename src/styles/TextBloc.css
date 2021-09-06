@@ -1,7 +1,11 @@
+.textBloc{
+  width: 50%;
+  margin: 0 5% 0 5%;
+}
 .title {
   display: flex;
   align-items: center;
-  margin-top: 2%;
+  margin: 2% auto 0;
   justify-content: space-between;
   background: #ff6060;
   padding: 1%;
@@ -25,6 +29,7 @@
   color: #ff6060;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  list-style: none;
 }
 
 svg{
@@ -33,4 +38,11 @@ svg{
 
 svg:hover {
   color: #ccc;
+}
+
+@media screen and (max-width: 895px) {
+  .textBloc{
+    width: inherit;
+    margin: 0 5% 0 5%;
+  }
 }

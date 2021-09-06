@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/HousePage.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Gallery  from "../components/Gallery";
 import Rating from "../components/Rating";
 import HostProfile from "../components/HostProfile";
 import HouseDetails from "../components/HouseDetails";
@@ -35,13 +36,14 @@ class HousePage extends Component {
     return (
       <section className="housepage">
       <Header />
+      <Gallery pictures={house.pictures}/>
         <article className="locAndHost">
           <HouseDetails
             title={house.title}
             location={house.location}
             tags={house.tags}
           />
-          <article>
+          <article className="host">
             <article>
               <HostProfile
                 name={house.host.name}
@@ -51,15 +53,15 @@ class HousePage extends Component {
             <Rating rating={house.rating} />
           </article>
         </article>
-        <article>
-          <TextBloc title="Description" description={house.description} />
+        <section className="blocDescription">
+          <TextBloc title="Description" description={house.description}/>
           <TextBloc
             title="Equipements"
             description={house.equipments.map((equipment, index) => (
               <li key={`${equipment}-${index}`}>{equipment}</li>
             ))}
           />
-        </article>
+        </section>
         <Footer />
       </section>
     );

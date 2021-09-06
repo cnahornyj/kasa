@@ -12,3 +12,10 @@ a:visited {
 .pageActive {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 436px) {
+  a {
+    margin-left: 25px;
+    text-transform: uppercase;
+  }
+}

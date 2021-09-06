@@ -1,20 +1,7 @@
-/*.descEqp{
-    display: flex;
-    margin: 5%;
-}
-
-.txt{
-    width: 50%;
-}
-
-article{
-    width: 50%;
-}*/
-
 .locAndHost {
   display: flex;
   justify-content: space-between;
-  margin: 2% 9%;
+  margin: 2% 5%;
   color: #ff6060;
 }
 
@@ -40,10 +27,6 @@ article{
   display: flex;
 }
 
-.host {
-  display: flex;
-}
-
 .nameHost {
   text-align: right;
   line-height: 22px;
@@ -66,13 +49,51 @@ span {
   border-radius: 10px;
   margin-right: 5px;
   display: inline-block;
-  width: 150px;
+  width: 125px;
   text-align: center;
   font-size: 14px;
+}
+
+.blocDescription{
+  display: flex;
+  align-content: space-evenly;
 }
 
 .equipments{
   display: flex;
   width: 90%;
   margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .locAndHost{
+    margin: 2% 7%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .blocDescription{
+   flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  .locAndHost{
+    margin: 2% 8%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .locAndHost{
+    flex-direction: column;
+    margin: 2% 10%;
+  }
+  .host{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+  }
 }
