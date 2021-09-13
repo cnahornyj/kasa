@@ -54,42 +54,46 @@ span {
   font-size: 14px;
 }
 
-.blocDescription{
+.blocDescription {
   display: flex;
   align-content: space-evenly;
 }
 
-.equipments{
+.equipments {
   display: flex;
   width: 90%;
   margin: auto;
 }
 
 @media screen and (max-width: 1100px) {
-  .locAndHost{
+  .locAndHost {
     margin: 2% 7%;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .blocDescription{
-   flex-direction: column;
+  .blocDescription {
+    flex-direction: column;
+    width: inherit;
+    align-items: center;
+  }
+  .blocDescription > article {
+    width: 90% !important;
   }
 }
 
-
 @media screen and (max-width: 850px) {
-  .locAndHost{
+  .locAndHost {
     margin: 2% 8%;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .locAndHost{
+  .locAndHost {
     flex-direction: column;
     margin: 2% 10%;
   }
-  .host{
+  .host {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;

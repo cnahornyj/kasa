@@ -40,9 +40,10 @@ svg:hover {
   color: #ccc;
 }
 
+/*
 @media screen and (max-width: 895px) {
   .textBloc{
     width: inherit;
     margin: 0 5% 0 5%;
   }
-}
+}*/
