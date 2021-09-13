@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/HouseDetails.css";
 
-class HouseLocalisation extends Component {
+class HouseDetails extends Component {
   render() {
     return (
       <article className="housedetails">
@@ -17,4 +17,4 @@ class HouseLocalisation extends Component {
   }
 }
 
-export default HouseLocalisation;
+export default HouseDetails;
