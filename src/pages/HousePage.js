@@ -6,7 +6,7 @@ import Gallery  from "../components/Gallery";
 import Rating from "../components/Rating";
 import HostProfile from "../components/HostProfile";
 import HouseDetails from "../components/HouseDetails";
-import TextBloc from "../components/TextBloc";
+import Collapse from "../components/Collapse";
 
 function findIndexByKeyValue(house, key, valuetosearch) {
   for (let i = 0; i < house.length; i++) {
@@ -54,8 +54,8 @@ class HousePage extends Component {
           </article>
         </article>
         <section className="blocDescription">
-          <TextBloc title="Description" description={house.description}/>
-          <TextBloc
+          <Collapse title="Description" description={house.description}/>
+          <Collapse
             title="Equipements"
             description={house.equipments.map((equipment, index) => (
               <li key={`${equipment}-${index}`}>{equipment}</li>

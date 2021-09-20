@@ -23,7 +23,6 @@ class HousesList extends Component {
 
   render() {
     const houses = this.state.houses;
-    console.log(this.state.houses);
     localStorage.setItem("houses",JSON.stringify(this.state.houses));
     return (
       <section className="housesList">

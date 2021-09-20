@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import "../styles/TextBloc.css";
+import "../styles/Collapse.css";
 
-class TextBloc extends Component {
+class Collapse extends Component {
   constructor() {
     super();
     this.state = {
@@ -21,7 +21,7 @@ class TextBloc extends Component {
       }
 
     return (
-      <article className="textBloc">
+      <article className="collapse">
         <div className="title">
           <h2 className="subtitle">{this.props.title}</h2>
           {button}
@@ -38,4 +38,4 @@ class TextBloc extends Component {
   }
 }
 
-export default TextBloc;
+export default Collapse;

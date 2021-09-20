@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../styles/Error.css";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 class Error extends Component {
   render() {
@@ -15,7 +14,6 @@ class Error extends Component {
             Retourner sur la page d'accueil
           </a>
         </section>
-        <Footer />
       </div>
     );
   }
