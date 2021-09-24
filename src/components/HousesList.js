@@ -3,7 +3,6 @@ import "../styles/HousesList.css";
 import { Link } from "react-router-dom";
 
 class HousesList extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -15,6 +14,7 @@ class HousesList extends Component {
     fetch("data.json")
       .then((res) => res.json())
       .then((result) => {
+        console.log(result);
         this.setState({
           houses: result,
         });
@@ -23,7 +23,8 @@ class HousesList extends Component {
 
   render() {
     const houses = this.state.houses;
-    localStorage.setItem("houses",JSON.stringify(this.state.houses));
+    console.log(houses);
+    localStorage.setItem("houses", JSON.stringify(this.state.houses));
     return (
       <section className="housesList">
         {houses.map((house, index) => (
