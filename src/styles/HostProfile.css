@@ -1,0 +1,14 @@
+.hostprofile {
+    display: flex;
+    justify-content: flex-end;
+}
+.hostprofile > p{
+    width: 50px;
+    text-align: right;
+    margin-right: 15px;
+}
+.hostprofile > img{
+    border-radius: 60px;
+    width: 40%;
+    height: 40%;
+}

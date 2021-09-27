@@ -1,3 +1,11 @@
+.housedetails > h2 {
+  margin-bottom: 0;
+}
+
+.housedetails > p {
+  margin-top: 10px;
+}
+
 .tagsOfHouse {
   width: 500px;
 }

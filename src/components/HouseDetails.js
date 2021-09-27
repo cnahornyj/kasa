@@ -5,8 +5,8 @@ class HouseDetails extends Component {
   render() {
     return (
       <article className="housedetails">
-        <h2 style={{marginBottom:"0"}}>{this.props.title}</h2>
-        <p style={{marginTop:"10px"}}>{this.props.location}</p>
+        <h2>{this.props.title}</h2>
+        <p>{this.props.location}</p>
         <article className="tagsOfHouse">
           {this.props.tags.map((tag, index) => (
             <span key={`${tag}-${index}`}>{tag}</span>
