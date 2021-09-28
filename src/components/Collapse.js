@@ -7,24 +7,28 @@ class Collapse extends Component {
   constructor() {
     super();
     this.state = {
-      isVisible: false
+      isVisible: false,
     };
   }
 
   render() {
-
-    let button;
-    if (this.state.isVisible){  
-      button = <FontAwesomeIcon icon={faChevronUp} className="arrow" onClick={() => this.onClick()} />
-      } else {
-      button = <FontAwesomeIcon icon={faChevronDown} className="arrow" onClick={() => this.onClick()} />
-      }
-
     return (
       <article className="collapse">
         <div className="title">
           <h2 className="subtitle">{this.props.title}</h2>
-          {button}
+          {this.state.isVisible ? (
+            <FontAwesomeIcon
+              icon={faChevronUp}
+              className="arrow"
+              onClick={() => this.onClick()}
+            />
+          ) : (
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className="arrow"
+              onClick={() => this.onClick()}
+            />
+          )}
         </div>
         {this.state.isVisible ? (
           <p className="description">{this.props.description}</p>
@@ -34,7 +38,7 @@ class Collapse extends Component {
   }
 
   onClick() {
-    this.setState(prevState => ({ isVisible: !prevState.isVisible }));
+    this.setState((prevState) => ({ isVisible: !prevState.isVisible }));
   }
 }
 
