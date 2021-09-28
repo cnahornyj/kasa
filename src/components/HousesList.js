@@ -14,20 +14,17 @@ class HousesList extends Component {
     fetch("data.json")
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
         this.setState({
           houses: result,
         });
+      localStorage.setItem("houses", JSON.stringify(this.state.houses));
       });
   }
 
   render() {
-    const houses = this.state.houses;
-    console.log(houses);
-    localStorage.setItem("houses", JSON.stringify(this.state.houses));
     return (
       <section className="housesList">
-        {houses.map((house, index) => (
+        {this.state.houses.map((house) => (
           <article key={`${house}-${house.id}`} className="card">
             <Link to={`/house/${house.id}`}>
               <img src={house.cover} alt="Logement" className="imgHouse" />
