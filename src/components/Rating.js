@@ -6,11 +6,9 @@ class Rating extends Component {
     const ratingScale = [1, 2, 3, 4, 5];
 
     return (
-      <article className="ratings" style={{ textAlign: "end" }}>
+      <article className="ratings">
         {ratingScale.map((scale) => (
-          <i
-            className={`fas fa-star${scale <= this.props.rating ? " rating" : ""}`} key={`star-${scale}`}
-          ></i>
+          <i className={`fas fa-star${scale <= this.props.rating ? "rating" : ""}`} key={`star-${scale}`}></i>
         ))}
       </article>
     );
