@@ -14,20 +14,20 @@ a:visited {
 }
 
 @media screen and (max-width: 436px) {
-  a {
+  nav > a {
     margin-left: 25px;
     text-transform: uppercase;
   }
 }
 
 @media screen and (max-width: 408px) {
-  a {
+  nav > a {
     margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 372px) {
-  a {
+  nav > a {
     margin-left: 5px;
   }
 }

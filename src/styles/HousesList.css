@@ -15,6 +15,10 @@
   margin-bottom: 2%;
 }
 
+.card > a {
+  margin-left: 0;
+}
+
 .imgHouse {
   width: 315px;
   height: 300px;
