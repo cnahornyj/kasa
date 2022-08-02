@@ -8,4 +8,8 @@ HTML / CSS / REACT
 
 ## Objectifs
 
+* Développer les routes d'une application web avec React Router
+* Initialiser une application web avec un framework
+* Créer des composants avec React
+
 
