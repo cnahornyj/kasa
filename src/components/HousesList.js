@@ -11,7 +11,7 @@ class HousesList extends Component {
   }
 
   componentDidMount() {
-    fetch("data.json")
+    fetch("https://cnahornyj.github.io/jsonkasapi/data.json")
       .then((res) => res.json())
       .then((result) => {
         this.setState({
