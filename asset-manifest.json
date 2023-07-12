@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kasa/home/static/css/main.8798bc1a.chunk.css",
-    "main.js": "/kasa/home/static/js/main.9f3261f0.chunk.js",
-    "main.js.map": "/kasa/home/static/js/main.9f3261f0.chunk.js.map",
+    "main.js": "/kasa/home/static/js/main.9f1f4453.chunk.js",
+    "main.js.map": "/kasa/home/static/js/main.9f1f4453.chunk.js.map",
     "runtime-main.js": "/kasa/home/static/js/runtime-main.6a178d84.js",
     "runtime-main.js.map": "/kasa/home/static/js/runtime-main.6a178d84.js.map",
     "static/js/2.b77d6bf0.chunk.js": "/kasa/home/static/js/2.b77d6bf0.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.6a178d84.js",
     "static/js/2.b77d6bf0.chunk.js",
     "static/css/main.8798bc1a.chunk.css",
-    "static/js/main.9f3261f0.chunk.js"
+    "static/js/main.9f1f4453.chunk.js"
   ]
 }
