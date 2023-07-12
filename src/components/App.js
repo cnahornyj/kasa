@@ -13,7 +13,7 @@ class App extends Component {
       // Mise en place du routing
        <BrowserRouter>
        <Switch>
-         <Route path="/" exact component={Home}/>
+         <Route path="/kasa" exact component={Home}/>
          <Route path="/a-propos" exact component={Propos}/>
          <Route path="/house/:id" component={HousePage}/>
          <Route component={Error}/>
