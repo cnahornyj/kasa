@@ -11,7 +11,7 @@ class Error extends Component {
         <section className="errorSection">
           <p className="errorCode">404</p>
           <p className="errorMsg">Oups! La page que vous demandez n'existe pas.</p>
-          <Link to={"/"} className="redirection">Retourner sur la page d'accueil</Link>
+          <Link to={"/home"} className="redirection">Retourner sur la page d'accueil</Link>
         </section>
       </div>
     );
